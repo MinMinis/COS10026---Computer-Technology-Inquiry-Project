@@ -1,0 +1,15 @@
+/* A simple style sheet to improve user interface */
+	body {font-family: Arial, sans-serif;}
+    legend {font-size: larger; font-weight:bold;}
+	fieldset {max-width: 500px}
+	/*.row {display:table-row;} */
+	label {display: table-cell; text-align:right; padding-right:10px; padding-bottom:5px;}
+	input {display: table-cell;}
+	/* input[type="submit"]{margin-left:120px;} */
+	.ok {color:green;}
+	.notok   {color:red;}
+	.wrong	{color:red; font-weight:bold;}
+	@media screen and (min-width:320px) {
+	.row {display:table-row;} 
+	input[type="submit"]{margin-left:120px;}
+	}

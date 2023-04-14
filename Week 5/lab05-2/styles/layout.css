@@ -1,0 +1,82 @@
+/*
+filename: layout.css
+author: Thanh Minh
+created: 2/10/2023
+last modified: 2/10/2023
+description: lab05task1.html
+*/
+aside:hover {
+    display: block;
+}
+
+.menu {
+    display: inline-block;
+}
+nav ul {
+    list-style: none;
+}
+aside {
+    border: 4px inset purple;
+    border-radius: 14px;
+    margin: 1em;
+    padding: 1em;
+    background: url(images/fade.jpg) repeat-x top left;
+    width: 30%;
+    float: right;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+header {
+    border: 1px darkgray;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: lightgray;
+    text-align: center;
+}
+footer {
+    border-top: 4px double;
+    clear: both;
+}
+#lists {
+    float: left;
+}
+table {
+    margin: auto;
+}
+#tables {
+    float: right;
+}
+
+#hypherlinks {
+    clear: both;
+    float: left;
+}
+#images {
+    float: right;
+}
+figure {
+    border: 2px solid #ccc;
+}
+#lists, #images, #tables, #hyperlinks {
+    width: 50%;
+    text-align: center;
+}
+ol, ul, dl {
+    text-align: left;
+}
+article {
+    min-width: 30em;
+}
+footer p {
+    display: inline-block;
+    width: 33%;
+}
+footer p:first {
+    float: left;
+}
+footer p:nth-child(2) {
+    text-align: center;
+}
+footer p:last-child {
+    float: right;
+    text-align: right;
+}

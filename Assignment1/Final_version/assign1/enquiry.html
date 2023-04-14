@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="description" content="Assignment 1 part 1" >
+    <meta name="keywords" content="Assignment 1, cos10026, html, css" >
+    <meta name="author" content="Thanh Minh" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="styles/style.css" >
+    <title>SE7EN | Enquiry</title>
+  </head>
+  <body>
+    <!--start of navbar-->
+    <div class="fixedtop">
+      <ul class="navbar-ul">
+        <li class="navbar-li"><a href="index.html">Home</a></li>
+        <li class="navbar-li"><a href="product.html">Product</a></li>
+        <li class="navbar-li"><a href="enquiry.html" class="active">Enquiry</a></li>
+        <li class="navbar-li"><a href="about.html">About</a></li>
+        <li class="navbar-li"><a href="enhancements.html">Enhancement</a></li>
+      </ul>
+    </div>
+    <!--End of navbar-->
+
+    <!--Start of main content-->
+    <div id="enquiry-flow">
+      <div class="enquiry-container">
+        <article class="bigblock bigblockstyle">
+          <div class="enquiry-container">
+            <header class="enquiry-header">
+              <h1 id="enquiry-header">Enquiry form</h1>
+            </header>
+            <div class="row">
+              <div class="block">
+                <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php" id="enquiry-form">
+                  <div class="row">
+                    <!--start of firstname -->
+                    <div class="smallblock half-row">
+                      <label class="label" for="fname">First Name</label>
+                      <input
+                        type="text" id="fname" name="First Name" placeholder="First Name" maxlength="25" pattern="^[a-zA-Z ]+$" required>
+                    </div>
+                    <!--end of firstname-->
+                    <!--start of lastname-->
+                    <div class="smallblock half-row">
+                      <label class="label" for="lname">Last Name</label>
+                      <input type="text" id="lname" name="Last Name" maxlength="25" placeholder="Last Name" pattern="^[a-zA-Z ]+$" required>
+                    </div>
+                    <!--end of lastname-->
+                    <!--start of telephone-->
+                    <div class="smallblock half-row">
+                      <label class="label" for="telephone">Telephone</label>
+                      <input type="text" id="telephone" placeholder="Telephone" name="Telephone" maxlength="10" pattern="[0-9]{0,10}" title="0-10 digits of your phone number" required>
+                    </div>
+                    <!--end of telephone-->
+                    <!--start of email-->
+                    <div class="smallblock half-row">
+                      <label class="label" for="email">Email</label>
+                      <input type="email" id="email" name="Email" placeholder="name@domain.com" pattern="^.+@.+\..{2,3}$" required>
+                    </div>
+                    <!--end of email-->
+                    <!--start of fieldset-->
+                    <div class="block">
+                      <fieldset class="fieldset">
+                        <legend id="enquiry-legend">Address</legend>
+                        <div class="block">
+                          <!--start of street-->
+                          <div class="fieldsetcontent half-row">
+                            <label class="label" for="street">Street</label>
+                            <input type="text" id="street" name="Street" maxlength="40" placeholder="Street" required>
+                          </div>
+                          <!--end of street-->
+                          <!--start of town-->
+                          <div class="fieldsetcontent half-row">
+                            <label class="label" for="town">Suburb/Town</label>
+                            <input type="text" id="town" name="Town/Suburb" maxlength="20" placeholder="Town/Suburb" required>
+                          </div>
+                          <!--end of town-->
+                        </div>
+                        <!--Start of select for state-->
+                        <div class="block">
+                          <div class="fieldsetcontent half-row">
+                            <label class="label">State</label>
+                            <select name="State" id="state" required>
+                              <option class="option" value="">Please select your State</option>
+                              <option class="option" value="NSW">NSW</option>
+                              <option class="option" value="QLD">QLD</option>
+                              <option class="option" value="NT">NT</option>
+                              <option class="option" value="WA">WA</option>
+                              <option class="option" value="SA">SA</option>
+                              <option class="option" value="TAS">TAS</option>
+                              <option class="option" value="ACT">ACT</option>
+                            </select>
+                          </div>
+                          <!--end of select for state-->
+                          <!--Start of postcode -->
+                          <div class="fieldsetcontent half-row">
+                            <label class="label" for="postcode">Postcode</label>
+                            <input  type="text" id="postcode" name="Postcode" placeholder="Postcode" maxlength="4" pattern="[0-9]{4}" title="Exactly 4 digits" required>
+                          </div>
+                          <!--end of postcode-->
+                        </div>
+                      </fieldset>
+                    </div>
+                    <!--end of fieldset-->
+                    <!--start of Preferred contact-->
+                    <div class="smallblock half-row">
+                      <label class="label" id="prefer-contact">Preferred Contact</label>
+                    </div>
+                    <div class="smallblock half-row">
+                      <label class="label"><input type="radio" class="radio-contact" name="Preferred_Contact" value="Email" required>Email</label>
+                      <label class="label"><input type="radio" class="radio-contact" name="Preferred_Contact" value="Phone" required>Telephone</label>
+                      <label class="label"><input type="radio" class="radio-contact" name="Preferred_Contact" value="Post" required>Post</label>
+                    </div>
+                    <!--end of preferred contact-->
+                    <!--start of product-->
+                    <div class="smallblock half-row">
+                      <label class="label" for="product">Product</label>
+                    </div>
+                    <div class="smallblock half-row">
+                      <select name="Product" id="product" required>
+                        <option class="option" value="">Select Product</option>
+                        <option class="option" value="EA SPORTS FIFA 23">EA SPORTS FIFA 23</option>
+                        <option class="option" value="Legue of Legends">Legue of Legends</option>
+                        <option class="option" value="Valorant">Valorant</option>
+                      </select>
+                    </div>
+                    <!--end of product-->
+                    <!--Product Features-->
+                    <div class="smallblock half-row">
+                      <label class="label">Product Features</label>
+                    </div>
+                    <div class="smallblock half-row">
+                      <!-- empty block -->
+                    </div>
+                    <div class="smallblock half-row">
+                      <label class="box">Storyline
+                        <input type="checkbox" name="Features[]" value="Rewards" class="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="box">Rewards<input type="checkbox" name="Features[]" value="Rewards" class="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="smallblock half-row">
+                      <label class="box">Strategy
+                        <input type="checkbox" name="Features[]" value="Strategy" class="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="box">Others
+                        <input type="checkbox" name="Features[]" value="Others" class="checkbox" checked>
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <!--end of Product Features-->
+                    <!--Textarea-->
+                    <div class="block">
+                      <label for="question-comment" class="label">Enquiry Question</label>
+                      <textarea name="Comment" id="question-comment" cols="20" rows="3" placeholder="Comment Field"></textarea>
+                    </div>
+                    <!--End of textarea-->
+                    <!--Start of submit button-->
+                    <div class="block">
+                      <button id="enquiry-button" type="submit" form="enquiry-form" value="Submit">Submit</button>
+                    </div>
+                    <!--end of Submit button-->
+                    <div class="block">
+                      <p>Copyright &#169;:
+                        <a href="https://uiverse.io/Navarog21/loud-bird-67">Button</a>
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!--end of main content-->
+  </body>
+</html>
